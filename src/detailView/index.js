@@ -24,6 +24,7 @@ function ProductView(){
     },[])
     //삭제하기
     const productDel = () =>{
+        console.log('aaaaaa');
         axios.delete(`${API_URL}/products/${id}`)
         .then(function(result){
             console.log("삭제되었습니다.");
